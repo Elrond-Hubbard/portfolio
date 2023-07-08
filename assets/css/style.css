@@ -11,7 +11,7 @@ body {
     color: #d29741;
     margin-left: 15%;
     margin-right: 15%;
-
+    padding-bottom: 200px;
 }
 
 header {
@@ -51,4 +51,22 @@ nav ul li a {
     padding-right: 10%;
     height: 100%;
     width: 100%;
+}
+
+#about {
+    display: inline-flex;
+    padding-right: 15%;
+    padding-left: 10%;
+}
+
+h2 {
+    padding-right: 5%;
+    font-size: 45px;
+    
+}
+
+p {
+    border-left-style: solid;
+    padding-left: 5%;
+    font-size: 30px;
 }
