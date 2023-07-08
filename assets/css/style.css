@@ -53,28 +53,40 @@ nav ul li a {
     width: 100%;
 }
 
-article {
+section {
     display: inline-flex;
     padding-right: 15%;
     padding-left: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 h2 {
+    min-width: 7ch;
     padding-right: 5%;
     font-size: 45px;
-    border-right-style: solid;
 }
 
 p {
+    font-size: 25px;
     padding-left: 5%;
-    font-size: 30px;
+    border-left-style: solid;
 }
 
-section {
+#projects {
+    list-style: none;
     padding-left: 5%;
-    font-size: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    border-left-style: solid;
 }
 
-section ul li {
-    display: inline-grid;
+#projects li {
+    height: 50%;
+    width: 50%;
 }
+
+#projects #Horiseon {
+    width: 100%;
+}
+
