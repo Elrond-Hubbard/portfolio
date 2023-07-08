@@ -53,7 +53,7 @@ nav ul li a {
     width: 100%;
 }
 
-#about {
+article {
     display: inline-flex;
     padding-right: 15%;
     padding-left: 10%;
@@ -62,11 +62,19 @@ nav ul li a {
 h2 {
     padding-right: 5%;
     font-size: 45px;
-    
+    border-right-style: solid;
 }
 
 p {
-    border-left-style: solid;
     padding-left: 5%;
     font-size: 30px;
+}
+
+section {
+    padding-left: 5%;
+    font-size: 30px;
+}
+
+section ul li {
+    display: inline-grid;
 }
