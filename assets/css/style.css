@@ -106,6 +106,8 @@ p {
     background-color: #d29741;
     color:#09080b;
     width:fit-content;
+    position:relative;
+    top: 30px;
 }
 
 #projects ul #horiseon {
@@ -114,6 +116,9 @@ p {
     background-image: url(../images/horiseon.jpg);
 }
 
+#projects ul #dicom {
+    background-image: url(../images/MRI.jpg);
+}
 
 
 
