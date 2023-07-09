@@ -53,8 +53,13 @@ nav ul li a {
     width: 100%;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 section {
-    display: inline-flex;
+    display: flex;
     padding-right: 15%;
     padding-left: 10%;
     padding-top: 50px;
@@ -62,31 +67,42 @@ section {
 }
 
 h2 {
-    min-width: 7ch;
-    padding-right: 5%;
+    padding-right: 1ch;
     font-size: 45px;
+    border-right-style: solid;
+    min-width: 9ch;
+    max-width: 9ch;
+    text-align:end;
+    margin-right: 5%;
 }
 
 p {
     font-size: 25px;
-    padding-left: 5%;
-    border-left-style: solid;
+    
 }
 
 #projects {
-    list-style: none;
-    padding-left: 5%;
-    display: flex;
-    flex-flow: row wrap;
-    border-left-style: solid;
-}
-
-#projects li {
-    height: 50%;
-    width: 50%;
-}
-
-#projects #Horiseon {
+    font-size: 25px;
     width: 100%;
 }
 
+#projects ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+#projects ul li {
+    width: 48%;
+    height: 300px;
+    border-style: solid;
+    background-position: center;
+}
+
+#projects ul #horiseon {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/horiseon.jpg);
+}
