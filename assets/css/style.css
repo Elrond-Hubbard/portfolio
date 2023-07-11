@@ -28,7 +28,6 @@ nav {
     padding-top: 20px;
     display: inline-flex;
     padding-inline-start: 20px;
-    border:
 }
 
 nav a {
@@ -47,6 +46,7 @@ nav a:hover {
     transition:all 0.5s;
 }
 
+/* Hero Image */
 #octo {
     padding-left: 10%;
     padding-right: 10%;
@@ -83,26 +83,32 @@ p {
 }
 
 #projects {
-    font-size: 25px;
     width: 100%;
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1em;
 }
 
 #projects a {
-    width: 50%;
+    width: calc(50% - 0.5em);
     height: 200px;
     border: solid #d29741;
     background-position: center;
     text-decoration: none;
 }
 
+/* Highlights projects on mouseover */
+#projects a:hover {
+    box-shadow: 0em 0em 1em #d29741;
+    transition: all 0.2s;
+}
+
 #projects a h3{
     padding-right: 1em;
     padding-left: 1em;
     text-decoration: none;
+    font-size: 25px;
     font-weight:bold;
     background-color: #d29741;
     color:#09080b;
@@ -116,19 +122,15 @@ p {
     height: 400px;
     background-image: url(../images/horiseon.jpg);
 }
-
 #projects #dicom {
     background-image: url(../images/MRI.jpg);
 }
-
 #projects #t2k {
     background-image: url(../images/corndog.jpg);
 }
-
 #projects #kayak {
     background-image: url(../images/kayak.jpg);
 }
-
 #projects #machine {
     background-image: url(../images/thefool.jpg);
 }
@@ -150,29 +152,29 @@ p {
 }
 
 #contact a:hover {
-    color:#09080b;
-    background-color:#d29741;
+    color: #09080b;
+    background-color: #d29741;
     transition:all 0.5s;
 }
 
-@media (max-width: 1730px) {
+/* Adjusts margins and padding based on viewport width */
+@media screen and (max-width: 1763px) {
     body {
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+@media screen and (max-width: 1235px) {
+    section {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     h2 {
         font-size: 30px;
     }
-}
-
-@media (max-width: 1220px) {
-    #octo {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    section {
-        padding-left: 0px;
-        padding-right: 5%;
+    #contact {
+        flex-direction: column;
+        width: fit-content;
     }
 }
