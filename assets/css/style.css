@@ -19,7 +19,7 @@ header h1 {
     padding-left: 5%;
     padding-top: 20px;
     font-family: 'Courier New', Courier, monospace;
-    font-weight:normal;
+    font-weight: normal;
 }
 
 nav {
@@ -37,13 +37,13 @@ nav a {
     margin-right: 1em;
     font-size: 30px;
     border-bottom-style: solid;
-    color:#d29741;
+    color: #d29741;
 }
 
 nav a:hover {
-    color:#09080b;
-    background-color:#d29741;
-    transition:all 0.5s;
+    color: #09080b;
+    background-color: #d29741;
+    transition: all 0.5s;
 }
 
 /* Hero Image */
@@ -52,6 +52,15 @@ nav a:hover {
     padding-right: 10%;
     height: 100%;
     width: 100%;
+    animation-name: octo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Octopus Animation */
+@keyframes octo {
+    from {filter: hue-rotate(0deg);}
+    to {filter: hue-rotate(360deg);}
 }
 
 main {
@@ -73,7 +82,7 @@ h2 {
     border-right-style: solid;
     min-width: 9ch;
     max-width: 9ch;
-    text-align:end;
+    text-align: end;
     margin-right: 5%;
 }
 
@@ -111,9 +120,9 @@ p {
     font-size: 25px;
     font-weight:bold;
     background-color: #d29741;
-    color:#09080b;
-    width:fit-content;
-    position:relative;
+    color: #09080b;
+    width: fit-content;
+    position: relative;
     top: 30px;
 }
 
@@ -148,13 +157,13 @@ p {
     padding-left: 5px;
     font-size: 30px;
     border-bottom-style: solid;
-    color:#d29741;
+    color: #d29741;
 }
 
 #contact a:hover {
     color: #09080b;
     background-color: #d29741;
-    transition:all 0.5s;
+    transition: all 0.5s;
 }
 
 /* Adjusts margins and padding based on viewport width */
@@ -168,6 +177,11 @@ p {
     section {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    #octo {
+        padding-right: 0%;
+        padding-left: 0%;
     }
 
     h2 {
