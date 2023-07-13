@@ -11,7 +11,7 @@ body {
     color: #d29741;
     margin-left: 15%;
     margin-right: 15%;
-    padding-bottom: 200px;
+    padding-bottom: 20px;
 }
 
 header h1 {
@@ -53,7 +53,7 @@ nav a:hover {
     height: 100%;
     width: 100%;
     animation-name: octo;
-    animation-duration: 4s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
@@ -103,17 +103,19 @@ p {
     width: calc(50% - 0.5em);
     height: 200px;
     border: solid #d29741;
+    border-radius: 10px;
     background-position: center;
     text-decoration: none;
 }
 
 /* Highlights projects on mouseover */
 #projects a:hover {
-    box-shadow: 0em 0em 1em #d29741;
+    box-shadow: 0em 0em 0.5em #d29741;
+    filter:contrast(115%);
     transition: all 0.2s;
 }
 
-#projects a h3{
+#projects a h3 {
     padding-right: 1em;
     padding-left: 1em;
     text-decoration: none;
@@ -126,10 +128,16 @@ p {
     top: 30px;
 }
 
+#projects a h3 p {
+    font-weight: normal;
+    font-size: 15px;
+}
+
 #projects #horiseon {
     width: 100%;
     height: 400px;
     background-image: url(../images/horiseon.jpg);
+    background-size: ;
 }
 #projects #dicom {
     background-image: url(../images/MRI.jpg);
@@ -146,7 +154,6 @@ p {
 
 #contact {
     display: inline-flex;
-    list-style: none;
     width: 100%;
     justify-content: space-between;
 }
@@ -166,6 +173,18 @@ p {
     transition: all 0.5s;
 }
 
+footer {
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    padding-top: 300px;
+}
+
+div {
+    font-size: 40px;
+    display: flex;
+}
+
 /* Adjusts margins and padding based on viewport width */
 @media screen and (max-width: 1763px) {
     body {
@@ -175,8 +194,8 @@ p {
 }
 @media screen and (max-width: 1235px) {
     section {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     #octo {
