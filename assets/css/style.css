@@ -133,21 +133,21 @@ p {
     font-size: 15px;
 }
 
-#projects #horiseon {
+#projects #capstone {
     width: 100%;
     height: 400px;
-    background-image: url(../images/team-sccrm.png);
+    background-image: url(https://github.com/Elrond-Hubbard/Team-SCCRM-2/blob/main/public/assets/img/surgeon.jpg?raw=true);
 }
-#projects #dicom {
-    background-image: url(../images/MRI.jpg);
+#projects #project-2 {
+    background-image: url(https://github.com/ChrisDeHaan/Team-SCCRM/blob/main/assets/images/space3.jpg?raw=true);
 }
-#projects #t2k {
-    background-image: url(../images/corndog.jpg);
+#projects #project-3 {
+    background-image: url(https://github.com/Elrond-Hubbard/jSynth2/blob/main/assets/images/screenshot.jpg?raw=true);
 }
-#projects #kayak {
+#projects #project-4 {
     background-image: url(../images/kayak.jpg);
 }
-#projects #machine {
+#projects #project-5 {
     background-image: url(../images/thefool.jpg);
 }
 
